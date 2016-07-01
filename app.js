@@ -1,11 +1,9 @@
 $('document').ready(function() {
-/*In this challenge we will be using the OMDb API to create a web page displaying
-your top 3 movies. You should make 3 queries to the OMDb API for each of your
-movies and append them to your screen. Each movie entry should use at least
-3 keys from the returned data (one being the image). Your page should be styled
-with CSS and look presentable.
 
-Here is a sample URL: http://www.omdbapi.com/?t=Sneakers&y=&plot=short&r=json*/
+// The following three chunks of code each do the following, in order: 1) get the
+// data for a movie from the OMDB API; 2) create objects for the Poster Img link,
+// Title and Year of each movie; 3) append those objects to the DOM according
+// to their respective <div> classes
 
 var whatAboutBob = $.get('http://www.omdbapi.com/?t=What%20About%20Bob&y=&plot=short&r=json');
 
