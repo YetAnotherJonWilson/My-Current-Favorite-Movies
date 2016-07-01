@@ -1,0 +1,8 @@
+Temporary file to store movie queries
+
+
+http://www.omdbapi.com/?t=Weepah%20Way%20For%20Now&y=&plot=short&r=json
+
+http://www.omdbapi.com/?t=Hamlet&y=&plot=short&r=json
+
+http://www.omdbapi.com/?t=What%20About%20Bob&y=&plot=short&r=json
