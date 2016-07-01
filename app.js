@@ -10,43 +10,43 @@ Here is a sample URL: http://www.omdbapi.com/?t=Sneakers&y=&plot=short&r=json*/
 var whatAboutBob = $.get('http://www.omdbapi.com/?t=What%20About%20Bob&y=&plot=short&r=json');
 
 whatAboutBob.then(function(data) {
+  var bobPoster = data.Poster;
+  var $bobMoviePoster = $('<li><img src="' + bobPoster + '"</img></li>');
+  $('.whatAboutBob').children().last().append($bobMoviePoster);
   var bobTitle = data.Title;
   var $bobMovieTitle = $('<li>' + bobTitle + '</li>');
-  $('.whatAboutBob').after($bobMovieTitle);
+  $('.whatAboutBob').children().last().append($bobMovieTitle);
   var bobYear = data.Year;
   var $bobMovieYear = $('<li>' + bobYear + '</li>');
-  $('.whatAboutBob').after($bobMovieYear);
-  var bobPoster = data.Poster;
-  var $bobMoviePoster = $('<img src="' + bobPoster + '"</img>');
-  $('.whatAboutBob').after($bobMoviePoster);
+  $('.whatAboutBob').children().last().append($bobMovieYear);
 });
 
 var hamlet = $.get('http://www.omdbapi.com/?t=Hamlet&y=&plot=short&r=json');
 
 hamlet.then(function(data) {
+  var hamletPoster = data.Poster;
+  var $hamletMoviePoster = $('<li><img src="' + hamletPoster + '"</img></li>');
+  $('.hamlet').children().last().append($hamletMoviePoster);
   var hamletTitle = data.Title;
   var $hamletMovieTitle = $('<li>' + hamletTitle + '</li>');
-  $('.hamlet').after($hamletMovieTitle);
+  $('.hamlet').children().last().append($hamletMovieTitle);
   var hamletYear = data.Year;
   var $hamletMovieYear = $('<li>' + hamletYear + '</li>');
-  $('.hamlet').after($hamletMovieYear);
-  var hamletPoster = data.Poster;
-  var $hamletMoviePoster = $('<img src="' + hamletPoster + '"</img>');
-  $('.hamlet').after($hamletMoviePoster);
+  $('.hamlet').children().last().append($hamletMovieYear);
 });
 
 var weepahWay = $.get('http://www.omdbapi.com/?t=Weepah%20Way%20For%20Now&y=&plot=short&r=json');
 
 weepahWay.then(function(data) {
+  var weepahWayPoster = data.Poster;
+  var $weepahWayMoviePoster = $('<li><img src="' + weepahWayPoster + '"</img></li>');
+  $('.weepahWay').children().last().append($weepahWayMoviePoster);
   var weepahWayTitle = data.Title;
   var $weepahWayMovieTitle = $('<li>' + weepahWayTitle + '</li>');
-  $('.weepahWay').after($weepahWayMovieTitle);
+  $('.weepahWay').children().last().append($weepahWayMovieTitle);
   var weepahWayYear = data.Year;
   var $weepahWayMovieYear = $('<li>' + weepahWayYear + '</li>');
-  $('.weepahWay').after($weepahWayMovieYear);
-  var weepahWayPoster = data.Poster;
-  var $weepahWayMoviePoster = $('<img src="' + weepahWayPoster + '"</img>');
-  $('.weepahWay').after($weepahWayMoviePoster);
+  $('.weepahWay').children().last().append($weepahWayMovieYear);
 });
 
 
