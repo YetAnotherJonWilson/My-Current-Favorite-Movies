@@ -33,7 +33,7 @@ hamlet.then(function(data) {
   $('.hamlet').children().last().append($hamletMovieYear);
 });
 
-var weepahWay = $.get('http://www.omdbapi.com/?t=Weepah%20Way%20For%20Now&y=&plot=short&r=json');
+var weepahWay = $.get('http://www.omdbapi.com/?t=The%20Edge%20Of%20Seventeen&y=&plot=short&r=json');
 
 weepahWay.then(function(data) {
   var weepahWayPoster = data.Poster;
