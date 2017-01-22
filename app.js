@@ -19,7 +19,7 @@ whatAboutBob.then(function(data) {
   $('.whatAboutBob').children().last().append($bobMovieYear);
 });
 
-var hamlet = $.get('http://www.omdbapi.com/?t=Hamlet&y=&plot=short&r=json');
+var hamlet = $.get('http://www.omdbapi.com/?t=Captain%20Fantastic&y=&plot=short&r=json');
 
 hamlet.then(function(data) {
   var hamletPoster = data.Poster;
